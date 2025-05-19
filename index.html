@@ -2,57 +2,64 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cafeteria Aroma & Sabor</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Cafeteria Aroma & Sabor</h1>
-    <p>☕ Onde o café encontra o carinho</p>
+    <div class="container">
+      <h1>Aroma & Sabor</h1>
+      <nav>
+        <ul>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="cardapio">
+  <section class="banner">
+    <div class="container">
+      <h2>O café que aquece sua alma</h2>
+      <p>Venha experimentar os melhores sabores da cidade.</p>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>Aroma & Sabor é uma cafeteria acolhedora e sofisticada, perfeita para uma pausa com um café de qualidade, doces artesanais e um atendimento inesquecível.</p>
+    </div>
+  </section>
+
+  <section id="cardapio" class="cardapio">
+    <div class="container">
       <h2>Cardápio</h2>
+      <ul>
+        <li><strong>Espresso</strong> – R$6,00</li>
+        <li><strong>Capuccino</strong> – R$8,00</li>
+        <li><strong>Mocha Gelado</strong> – R$10,00</li>
+        <li><strong>Bolo de Cenoura com Chocolate</strong> – R$7,00</li>
+        <li><strong>Cheesecake de Frutas Vermelhas</strong> – R$9,00</li>
+      </ul>
+    </div>
+  </section>
 
-      <div class="categoria">
-        <h3>Cafés</h3>
-        <ul>
-          <li>Espresso - R$ 5,00</li>
-          <li>Cappuccino - R$ 8,00</li>
-          <li>Mocha - R$ 9,00</li>
-        </ul>
-      </div>
-
-      <div class="categoria">
-        <h3>Bolos</h3>
-        <ul>
-          <li>Bolo de cenoura com chocolate - R$ 7,00</li>
-          <li>Bolo de fubá - R$ 6,00</li>
-        </ul>
-      </div>
-
-      <div class="categoria">
-        <h3>Salgados</h3>
-        <ul>
-          <li>Coxinha - R$ 6,00</li>
-          <li>Empada de frango - R$ 6,50</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="contato">
-      <h2>Fale com a gente</h2>
-      <p>📱 WhatsApp: (99) 99999-9999</p>
-      <button onclick="falarConosco()">Chamar no WhatsApp</button>
-    </section>
-  </main>
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <p>📍 Rua das Flores, 123 - Seropédica, RJ</p>
+      <p>📞 (21) 99999-0000</p>
+      <p>📧 cafe@aromaesabor.com</p>
+    </div>
+  </section>
 
   <footer>
-    <p>© 2025 Cafeteria Aroma & Sabor - Todos os direitos reservados</p>
+    <div class="container">
+      <p>&copy; 2025 Aroma & Sabor. Todos os direitos reservados.</p>
+    </div>
   </footer>
-
-  <script src="main.js"></script>
 </body>
 </html>
